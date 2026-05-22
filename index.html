@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DARK NET SEGURIDAD</title>
+
+<style>
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:black;
+color:#00ff66;
+overflow-x:hidden;
+position:relative;
+}
+
+/* FONDO GLOBAL MATRIX */
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+
+background:
+linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070');
+
+background-size:cover;
+background-position:center;
+
+z-index:-3;
+}
+
+/* EFECTO MATRIX */
+
+body::after{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+
+background:
+repeating-linear-gradient(
+transparent 0px,
+rgba(0,255,0,0.03) 2px,
+transparent 4px
+);
+
+z-index:-2;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:40px 20px;
+}
+
+.logo{
+width:220px;
+filter:drop-shadow(0 0 25px #00ff66);
+margin-bottom:20px;
+}
+
+header h1{
+font-size:90px;
+letter-spacing:10px;
+text-shadow:0 0 25px #00ff66;
+}
+
+header p{
+margin-top:15px;
+letter-spacing:5px;
+font-size:14px;
+color:#00ff88;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.hero h2{
+font-size:70px;
+margin-bottom:30px;
+text-shadow:0 0 20px #00ff66;
+}
+
+.hero p{
+font-size:22px;
+line-height:2;
+max-width:900px;
+margin:auto;
+color:#ccc;
+}
+
+/* BOTON */
+
+button{
+margin-top:40px;
+padding:18px 50px;
+background:#00ff66;
+color:black;
+border:none;
+border-radius:15px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:0.4s;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:0 0 25px #00ff66;
+}
+
+/* SECCIONES */
+
+section{
+padding:90px 40px;
+}
+
+section h2{
+text-align:center;
+font-size:50px;
+margin-bottom:60px;
+text-shadow:0 0 15px #00ff66;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(0,0,0,0.7);
+border:1px solid #00ff66;
+padding:35px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #00ff66;
+}
+
+.card h3{
+font-size:25px;
+margin-bottom:20px;
+}
+
+.card p{
+line-height:1.8;
+color:#ccc;
+}
+
+/* GLOBAL */
+
+.global{
+text-align:center;
+max-width:1100px;
+margin:auto;
+}
+
+.global p{
+font-size:22px;
+line-height:2;
+color:#ccc;
+}
+
+/* QR */
+
+.qr{
+text-align:center;
+}
+
+.qr img{
+margin-top:30px;
+border:10px solid white;
+border-radius:20px;
+box-shadow:0 0 25px #00ff66;
+}
+
+/* FOOTER */
+
+footer{
+padding:40px;
+text-align:center;
+border-top:1px solid #00ff66;
+letter-spacing:5px;
+margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header h1{
+font-size:50px;
+}
+
+.hero h2{
+font-size:40px;
+}
+
+.hero p,
+.global p{
+font-size:17px;
+}
+
+section h2{
+font-size:35px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<img src="logo.png" class="logo">
+
+
+
+<h1>DARK NET</h1>
+
+<p>
+SEGURIDAD • EXPERIENCIA • TECNOLOGÍA • CONFIANZA
+</p>
+
+</header>
+
+<section class="hero">
+
+<h2>
+PROTEGEMOS EL FUTURO DIGITAL
+</h2>
+
+<p>
+Empresa especializada en ciberseguridad avanzada,
+inteligencia tecnológica, análisis forense digital
+y protección global de datos para entidades públicas
+y privadas.
+</p>
+
+<button>
+SOLICITAR SERVICIOS
+</button>
+
+</section>
+
+<section>
+
+<h2>NUESTROS SERVICIOS</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>CIBERSEGURIDAD EMPRESARIAL</h3>
+
+<p>
+Protección de infraestructuras críticas,
+redes, servidores y sistemas digitales.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ANÁLISIS FORENSE DIGITAL</h3>
+
+<p>
+Investigación de incidentes tecnológicos
+y recuperación de evidencia digital.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>INTELIGENCIA DE AMENAZAS</h3>
+
+<p>
+Monitoreo preventivo y análisis avanzado
+de riesgos cibernéticos.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>PROTECCIÓN DE DATOS</h3>
+
+<p>
+Garantizamos integridad, disponibilidad
+y confidencialidad de información.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>NUESTROS PILARES</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>EXPERIENCIA</h3>
+
+<p>
+Conocimiento técnico y estratégico
+aplicado a la seguridad moderna.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>TECNOLOGÍA</h3>
+
+<p>
+Herramientas avanzadas e innovación
+contra amenazas digitales.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>CONFIANZA</h3>
+
+<p>
+Compromiso, confidencialidad
+y respaldo profesional.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="global">
+
+<h2>
+PROTECCIÓN GLOBAL
+</h2>
+
+<p>
+Nuestra visión es construir un entorno digital seguro
+con estándares internacionales de ciberseguridad,
+monitoreo 24/7 y tecnología avanzada para enfrentar
+las amenazas modernas del mundo actual.
+</p>
+
+</section>
+
+<section class="qr">
+
+<h2>ESCANEA NUESTRO QR</h2>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://darknetseguridad.com">
+
+</section>
+
+<footer>
+
+DARK NET SEGURIDAD © 2026
+
+</footer>
+
+</body>
+
+</html>
